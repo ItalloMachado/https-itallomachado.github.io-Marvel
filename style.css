@@ -1,0 +1,202 @@
+html{
+    --backgroundimage:url("./img/CA1.jpg");
+    --colorh2:-webkit-linear-gradient(#ffffff, #162ca2);
+
+}
+body{
+
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: #22252A;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+}
+.marvel-logo{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100%;
+    background: white;
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.2);
+}
+header h1{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+main{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    bottom: 10%;
+    background-color: black;
+}
+footer{
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgb(33, 36, 41);
+}
+nav{
+    font: normal 14px/22px Open Sans,Trebuchet MS,Helvetica,Arial,sans-serif;
+    float: left;
+    top: 0;
+    width: 20%;
+    height: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+.pos-arrow{
+    position: relative;
+    height: 10%;
+    width: 100%;
+    
+}
+.nav-movies{
+    
+    position: relative;
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    
+}
+.nav-movies a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+}
+.nav-movies a:hover{
+    padding: 15px 0;
+    font-size: 25px;
+
+}
+.nav-movies .active{
+    color: #7b6fde;
+}
+
+.arrow{
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 6px solid white;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.arrow:hover{
+    border: 8px solid gray;
+}
+.arr-up{
+    top:60%;
+    border-bottom: none;
+    border-right: none;
+}
+.arr-up:hover{
+    border-bottom: none;
+    border-right: none;
+}
+.arr-down{
+    top:40%;
+    border-top: none;
+    border-left: none;  
+}
+.arr-down:hover{
+    border-top: none;
+    border-left: none;  
+}
+/* width */
+::-webkit-scrollbar {
+    display: none;
+}
+
+section{
+    float: left;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    position: relative;    
+}
+.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+     background-image: var(--backgroundimage);
+     height: 100%;
+     width: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    filter: blur(2px);
+}
+.movie{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    
+}
+
+.next{
+    text-align: center;
+    font-size: 30px;
+}
+.up {
+    position: relative;
+    border: 4px solid black;
+    width: 20px;
+    height:20px;
+  }
+
+  .myVideo {
+    position: absolute;
+    top:50%;
+    left: 0;
+    margin-left: 30px;
+    transform: translateY(-50%);
+    width: 50%;
+    height: 60%;
+    border:none;
+  }
+  .info-Movies{  
+    position: absolute;
+    top:12%;
+    left: 60%;
+
+
+    
+  }
+  .info-Movies h2{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-size: 40px;
+    background: var(--colorh2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+     
+
+  }
+  .info-Movies p{
+    font: normal 14px/22px "Open Sans","Trebuchet MS",Helvetica,Arial,sans-serif;
+      text-align: justify;
+      padding: 0 50px 0 0;
+      color: aliceblue;
+  }
