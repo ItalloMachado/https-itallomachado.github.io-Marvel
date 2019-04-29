@@ -3,9 +3,7 @@ html{
     --colorh2:-webkit-linear-gradient(#ffffff, #162ca2);
 
 }
-body{
 
-}
 header{
     position: fixed;
     top: 0;
@@ -48,6 +46,16 @@ footer{
     height: 10%;
     width: 100%;
     background-color: rgb(33, 36, 41);
+}
+.icon{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 30px;
+    line-height: 30px;
 }
 nav{
     font: normal 14px/22px "Open Sans",Trebuchet MS,Helvetica,Arial,sans-serif;
@@ -228,6 +236,9 @@ section{
       nav{
           display: none;
       }
+      .icon{
+          display: block;
+      }
       section{
           width: 100%;
       }
@@ -278,4 +289,16 @@ section{
         font-family: "Arial Black", Gadget, sans-serif;
         font-size: 18px;
       }
+  }
+  @media only screen and (max-width:350px){
+    .icon{
+        left: 15px;
+    }
+    .marvel-logo{
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 80%;
+    }
   }
