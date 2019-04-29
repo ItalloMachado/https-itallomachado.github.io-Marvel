@@ -87,7 +87,7 @@ movies=[{
     name:"Homem-Formiga",
     ImgBackground:'url("./img/antman.jpg")',
     color:'-webkit-linear-gradient(#ff0000, #800000)',
-    sinopse :'Dr. Hank Pym (Michael Douglas) é o inventor da fórmula/ traje que permite o encolhimento. Anos depois da descoberta, precisa impedir que seu ex-pupilo Darren Cross (Corey Stoll) consiga replicar o feito e vender a tecnologia para HYDRA. Dr. Pym escolhe o trambiqueiro Scott Lang (Paul Rudd) à usar o traje do Homem-Formiga. Lang, que acabou de sair da prisão e está com dificuldade de achar um trabalho honesto, aceita.',
+    sinopse :'Dr. Hank Pym (Michael Douglas) é o inventor da fórmula/traje que permite o encolhimento. Anos depois da descoberta, precisa impedir que seu ex-pupilo Darren Cross (Corey Stoll) consiga replicar o feito e vender a tecnologia para HYDRA. Dr. Pym escolhe o trambiqueiro Scott Lang (Paul Rudd) à usar o traje do Homem-Formiga. Lang, que acabou de sair da prisão e está com dificuldade de achar um trabalho honesto, aceita.',
     trailer:'https://www.youtube.com/embed/pWdKf3MneyI'
 },{
     name:"Capitão America:Guerra Civil",
