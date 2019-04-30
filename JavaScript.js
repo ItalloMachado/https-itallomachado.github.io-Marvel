@@ -3,7 +3,6 @@ let navMovies=document.getElementById("nav-movies");
 arrow[0].addEventListener("click",()=>{navMovies.scrollTop-=50});
 arrow[1].addEventListener("click",()=>{navMovies.scrollTop+=50});
 
-
 movies=[{
     name:"Capitão America: O Primeiro Vingador",
     ImgBackground:'url("./img/CA1.jpg")',
@@ -147,6 +146,9 @@ for(let i in selectMovie){
         let currentAtive=document.getElementsByClassName('active');
         currentAtive[0].className=currentAtive[0].className.replace(" active","");
         this.className+=" active";
+        if(window.innerWidth<=700){ // fechar o nav quando esta no celular
+            closeNav();
+        }
         for(let j in movies){
             if(this.innerHTML == movies[j].name){
                 let trailerMovie=document.getElementsByClassName("myVideo")[0];
@@ -162,4 +164,33 @@ for(let i in selectMovie){
             }
         }
     });
+}
+
+function OpenNav(){
+    
+    let navf = document.getElementById("nav");console.log(navf.className);
+    if (navf.className != "resposiveNav"){
+        navf.className ="resposiveNav";
+        document.getElementById("myarrow").className = "pos-arrowResp";
+        document.getElementById("myarrow2").className = "pos-arrowResp";
+    }
+    console.log(navf.className);
+    //document.getElementById("nav").style.width = "100%";
+    //document.getElementsByClassName("pos-arrow")[0].style.display = "block";
+    //document.getElementsByClassName("pos-arrow")[1].style.display = "block";
+    //document.getElementsByName("nav").style.width = "100%";
+}
+
+function closeNav(){
+    let navf = document.getElementById("nav");
+    console.log(navf.className);
+    if (navf.className == "resposiveNav"){
+        navf.className ="";
+        document.getElementById("myarrow").className = "pos-arrow";
+        document.getElementById("myarrow2").className = "pos-arrow";
+    }
+    console.log(navf.className);
+    //document.getElementById("nav").style.width = "40%";
+    //document.getElementsByClassName("pos-arrow")[0].style.display = "block";
+    //document.getElementsByClassName("pos-arrow")[1].style.display = "block";
 }
