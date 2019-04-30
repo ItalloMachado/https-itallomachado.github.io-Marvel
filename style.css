@@ -3,7 +3,6 @@ html{
     --colorh2:-webkit-linear-gradient(#ffffff, #162ca2);
 
 }
-
 header{
     position: fixed;
     top: 0;
@@ -70,8 +69,7 @@ nav{
 .pos-arrow{
     position: relative;
     height: 10%;
-    width: 100%;
-    
+    width: 100%; 
 }
 .nav-movies{
     
@@ -132,7 +130,14 @@ nav{
     border-top: none;
     border-left: none;  
 }
-
+.close{
+    text-decoration: none;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    font-size: 30px;
+    color: white;
+}
 
 section{
     float: left;
@@ -225,15 +230,110 @@ section{
       text-align: justify;
       color: aliceblue; 
   }
+
+  .pos-arrowResp{
+    position: relative;
+    height: 10%;
+    width: 100%;
+}
+
+.contact{
+    box-sizing: border-box;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 250px;
+    height: 100%;
+    text-align: center;
+}
+.contact .namesite{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    
+}
+.contact .fa{
+    margin: 6px 7px;
+    background-color: white;
+    color: rgb(33, 36, 41);
+    padding: 6px;
+    font-size: 16px;
+    width: 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa .tooltips{
+    position: absolute;
+    visibility: hidden;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    z-index: 1;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding: 10px 0;
+}
+.fa .tooltips::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+.contact .fa-google:hover .tooltips{
+    visibility: visible;
+    opacity: 1;
+}
+.contact .fa-github:hover .tooltips{
+    visibility: visible;
+    opacity: 1;
+    left: 31%;
+}
+.contact .fa-linkedin:hover .tooltips{
+    visibility: visible;
+    opacity: 1;
+    left: 68%;
+}
   @media only screen and (max-width:1000px){
     .info-Movies h2{
         font-family: "Arial Black", Gadget, sans-serif;
         font-size: 25px;
       }
   }
+  
+
 
   @media only screen and (max-width:700px){
+    .resposiveNav{
+        position:fixed;
+        z-index: 2000;
+        width: 100%;
+        left: 0;
+        background-color: #22252A;
+    }
+    .pos-arrowResp{
+        position: relative;
+        height: 10%;
+        width: 100%;
+    }
       nav{
+        position:fixed;
+        z-index: 2000;
+        width: 0%;
+        left: 0;
+        background-color: #22252A;
+
+      }
+      .pos-arrow{
           display: none;
       }
       .icon{
