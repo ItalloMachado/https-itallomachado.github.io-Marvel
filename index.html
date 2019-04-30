@@ -11,14 +11,14 @@
             <div >
                 <img class="marvel-logo" src="./img/marvel-logo.png">
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0)" class="icon" onclick="OpenNav()">
                     <i class="fa fa-bars"></i>
                   </a>
         </header>
         <main>
             <div class="bg"></div>
-            <nav>
-                <div class="pos-arrow "><div class="arrow arr-up"></div></div>
+            <nav id="nav" class="">
+                <div id="myarrow" class="pos-arrow"><div class="arrow arr-up"></div><a href="javascript:void(0)" onclick="closeNav()" class="close">x</a></div>
                 <div class="nav-movies" id="nav-movies">
                     <a href="#" class="op-movie active">Capitão America: O Primeiro Vingador</a>
                     <a href="#" class="op-movie">Capitã Marvel</a>
@@ -43,7 +43,7 @@
                     <a href="#" class="op-movie">Vingadores: Guerra Infinita</a>
                     <a href="#" class="op-movie">Vingadores: Ultimato</a>
                 </div>
-                <div class="pos-arrow "><div class="arrow arr-down"></div></div>     
+                <div id="myarrow2" class="pos-arrow"><div class="arrow arr-down"></div></div>     
             </nav>
             <section>    
                 <iframe  class="myVideo"  src="https://www.youtube.com/embed/JerVrbLldXw"></iframe> 
@@ -59,7 +59,15 @@
             </section> 
         </main>
         <footer>
-
+            <div class="contact">
+                <a class="namesite" href="https://itallomachado.github.io/">itallomachado.github.io</a>
+                <div class="midia">
+                    <a href="https://github.com/ItalloMachado" target="_blank" class="fa fa-github"><span class="tooltips">Faça uma visita no meu GitHub!</span></a>
+                    <a href="mailto:itallo.machado@gmail.com" class="fa fa-google"><span class="tooltips">Me manda um email: Itallo.machado@gmail.com</span></a>
+                    <a href="https://www.linkedin.com/in/itallo-machado-70902865/" target="_blank" class="fa fa-linkedin"><span class="tooltips">Me manda uma mensagem no Linkedin!</span></a>
+                    
+                </div>
+            </div>
         </footer>
         <script src="JavaScript.js"></script>
     </body>
